@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+  padding: 0;
+  background-color: grey;
+  color: #fff;
+}
+
+.edit-countries {
+  display: block;
+  background-color: blue;
+}
+
+table tr td{
+  border: 1px solid #fff;
+}
+
+.ng-scope {
+  margin: 5px auto;
+}
+
+ul {
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  float: left;
+  padding: 5px;
+}
+
+a {
+  padding: 5px 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: black;
+}
+
+a:active {
+  background-color: black;
+}

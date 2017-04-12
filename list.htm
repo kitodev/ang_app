@@ -1,0 +1,17 @@
+
+  <h1>List Countries</h1>
+  <label>Search:<input type="text" ng-model="search" class="form-control" placeholder="Give me a countries name" autofocus/></label>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Country Name: </th>
+        <th>Region: </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="country in all | filter: search">
+        <td>{{ country.name }}</td>
+        <td>{{ country.region }}</td>
+      </tr>
+    </tbody>
+  </table>
