@@ -16,7 +16,7 @@
     <tbody>
       <tr ng-repeat="country in all | filter: search">
         <td>
-          <div ng-hide="editingData[tableData.id]">{{country.name}}</div>
+          {{country.name}}
         </td>
         <td>{{ country.region }}</td>
         <td>
