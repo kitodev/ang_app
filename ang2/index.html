@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rest Countries</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <div ng-app="restCountries" style="width: 350px;">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#list">List Countries</a></li>
+        <li><a href="#edit">Edit Countries</a></li>
+      </ul>
+        <div ng-view></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="app/myApp.js"></script>
+    <script src="app/myCtrl.js"></script>
+</body>
+</html>

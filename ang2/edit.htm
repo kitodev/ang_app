@@ -1,0 +1,30 @@
+<div class="list-countries">
+  <h3>Edit Countries</h3>
+  <div class="form-group" ng-if="editListing">
+    <label for="contryName">Country name: </label>
+    <input type="text" class="form-control" ng-model="existListing.name" />
+    <label for="regionName">Region: </label>
+    <input type="text" class="form-control" ng-model="existListing.region" />
+    <button ng-show="editListing" ng-click="saveEditCountry()">Save</button>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Country Name</th>
+        <th>Region</th>
+        <th>Option</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="country in all | filter: search">
+        <td>
+          <div ng-hide="editingData[tableData.id]">{{country.name}}</div>
+        </td>
+        <td>{{ country.region }}</td>
+        <td>
+          <span class="glyphicon glyphicon-edit" title="Edit" ng-click="editCountry(country)"></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
